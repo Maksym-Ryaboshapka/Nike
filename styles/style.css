@@ -1,0 +1,351 @@
+* {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+/* header,
+section,
+footer {
+    outline: solid green;
+} */
+
+/* li {
+    outline: solid yellow;
+} */
+
+.container {
+    /* outline: solid red; */
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #012D63;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.header-logo {
+    width: 100px;
+    height: 60px;
+}
+
+.header-navigation {
+    display: flex;
+    margin-left: 152px;
+}
+
+.header-pages {
+    display: flex;
+    gap: 29px;
+}
+
+.active-page {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.header-page {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #C7C7C7;
+    font-weight: 300;
+}
+
+.header-page:hover {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.header-languages {
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+}
+
+.header-laguage {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #DCDCDC;
+    font-weight: 300;
+}
+
+.header-laguage:hover {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.active-laguage {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.hero {
+    background-image: url(../images/hero-background.jpg);
+    padding-bottom: 286px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-logo {
+    width: 160px;
+    height: 120px;
+}
+
+.hero-abr {
+    font-family: 'PT Serif';
+    font-size: 48px;
+    line-height: 1.33;
+    color: #FFFFFF;
+}
+
+.hero-title {
+    font-family: 'Playfair Display';
+    font-size: 144px;
+    line-height: 192px;
+    color: #FFFFFF;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display';
+    font-size: 72px;
+    line-height: 1.33;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.77;
+    color: #FFFFFF;
+    max-width: 508px;
+    padding-bottom: 41px;
+}
+
+.hero-btn {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+    background-color: #8E32C6;
+    padding: 20px 61px 19px;
+    width: 254px;
+    border-radius: 10px;
+}
+
+.advances {
+    background-image: url(../images/advances-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.advances-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advances-item {
+    background-image: url(../images/advances-item-background.svg);
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advances-flex {
+    display: flex;
+    align-items: center;
+}
+
+.advances-number {
+    font-family: 'Salsa';
+    font-size: 170px;
+    line-height: 1.22;
+    color: #FFFFFF;
+    margin-right: 18px;
+}
+
+.advances-title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 1.33;
+    color: #FFFFFF;
+}
+
+.advances-img:nth-child(1) {
+    width: 300px;
+    height: 320px;
+}
+
+.advances-img:nth-child(2) {
+    width: 300px;
+    height: 300px;
+}
+
+.advances-img:nth-child(3) {
+    width: 350px;
+    height: 350px;
+}
+
+.characteristics {
+    background-image: url(../images/characteristics-background.jpg);
+}
+
+.characteristics-img {
+    width: 835px;
+    height: 400px;
+}
+
+.characteristics-text {
+    font-family: 'Playfair Display';
+    font-size: 28px;
+    line-height: 1.32;
+    color: #FFFFFF;
+}
+
+.characteristics-description {
+    font-size: 28px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.reviews {
+    background-image: url(../images/reviews-background.png);
+}
+
+.reviews-item:nth-child(1) {
+    background: linear-gradient(136.55deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+    border-radius: 15px;
+}
+
+.reviews-item:nth-child(2) {
+    background: linear-gradient(136.55deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
+    border-radius: 15px
+}
+
+.reviews-item:nth-child(3) {
+    background: linear-gradient(142.67deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
+    border-radius: 15px;
+}
+
+.reviews-title {
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reviews-description {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.reviews-time {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #D8D8D8;
+}
+
+.reviews-img {
+    width: 31px;
+    height: 31px;
+}
+
+.reviews-name {
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+}
+
+.reviews-text {
+    font-size: 12px;
+    line-height: 1.17;
+    color: #D8D8D8;
+}
+
+.order {
+    background-image: url(../images/order-background.jpg);
+}
+
+.order-title {
+    font-size: 48px;
+    line-height: 1.33;
+    color: #FFFFFF;
+    font-family: 'Playfair Display';
+}
+
+.order-input:nth-child(1)::placeholder {
+    font-size: 28px;
+    line-height: 1.18;
+    color: #959595;
+}
+
+.order-input:nth-child(n+2)::placeholder {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #959595;
+}
+
+.order-btn {
+    font-size: 28px;
+    line-height: 1.18;
+    color: #8D8D8D;
+}
+
+.order-btn2 {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #021635;
+}
+
+.footer-quation {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.footer-mail {
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    font-size: 18px;
+    line-height: 1.17;
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    width: 108px;
+    height: 81px;
+}
+
+.footer-abr {
+    font-family: 'PT Serif';
+    font-size: 24px;
+    line-height: 1.33;
+    color: #FFFFFF;
+}
