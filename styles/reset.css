@@ -11,6 +11,7 @@ p {
 a {
     text-decoration: none;
     cursor: pointer;
+    display: block;
 }
 
 img {
@@ -26,5 +27,11 @@ ul, ol {
 button {
     padding: 0;
     border: none;
+    display: block;
+}
+
+input {
+    border: none;
+    padding: 0;
     display: block;
 }

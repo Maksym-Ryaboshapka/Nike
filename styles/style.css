@@ -24,12 +24,12 @@ footer {
 
 .header {
     background-color: #012D63;
+    padding-top: 30px;
 }
 
 .header-flex {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .header-logo {
@@ -45,6 +45,7 @@ footer {
 .header-pages {
     display: flex;
     gap: 29px;
+    padding-bottom: 38px;
 }
 
 .active-page {
@@ -70,6 +71,7 @@ footer {
     display: flex;
     margin-left: auto;
     gap: 15px;
+    padding-bottom: 38px;
 }
 
 .header-laguage {
@@ -92,7 +94,7 @@ footer {
 }
 
 .hero {
-    background-image: url(../images/hero-background.jpg);
+    background-image: url(../images/hero-bg.jpg);
     padding-bottom: 286px;
     background-repeat: no-repeat;
     background-position: center;
@@ -145,10 +147,12 @@ footer {
 }
 
 .advances {
-    background-image: url(../images/advances-background.jpg);
+    background-image: url(../images/advances-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 55px;
+    padding-bottom: 80px;
 }
 
 .advances-list {
@@ -157,15 +161,11 @@ footer {
 }
 
 .advances-item {
-    background-image: url(../images/advances-item-background.svg);
-    width: 300px;
+    background-image: url(../images/advances-item-bg.svg);
+    height: 470px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 300px;
 }
 
 .advances-flex {
@@ -186,30 +186,32 @@ footer {
     font-size: 36px;
     line-height: 1.33;
     color: #FFFFFF;
+    max-width: 160px;
 }
 
-.advances-img:nth-child(1) {
+.advances-img {
     width: 300px;
     height: 320px;
 }
 
-.advances-img:nth-child(2) {
-    width: 300px;
-    height: 300px;
-}
-
-.advances-img:nth-child(3) {
-    width: 350px;
-    height: 350px;
-}
-
 .characteristics {
-    background-image: url(../images/characteristics-background.jpg);
+    background-image: url(../images/characteristics-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 45px;
+    padding-bottom: 82px;
+}
+
+.characteristics-flex {
+    display: flex;
+    justify-content: center;
 }
 
 .characteristics-img {
     width: 835px;
     height: 400px;
+    margin-bottom: 38px;
 }
 
 .characteristics-text {
@@ -217,6 +219,21 @@ footer {
     font-size: 28px;
     line-height: 1.32;
     color: #FFFFFF;
+    margin-left: auto;
+}
+
+.characteristics-content {
+    padding-left: 55px;
+}
+
+.characteristics-list {
+    display: flex;
+    padding: 26px 65px;
+    background: linear-gradient(91.33deg, #8E32C6 15.44%, #D600C0 69.67%);
+    border-radius: 15px;
+    width: 715px;
+    height: 85px;
+    justify-content: space-between;
 }
 
 .characteristics-description {
@@ -226,7 +243,32 @@ footer {
 }
 
 .reviews {
-    background-image: url(../images/reviews-background.png);
+    background-image: url(../images/reviews-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 45px;
+    padding-bottom: 70px;
+}
+
+.reviews-title {
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Playfair Display';
+    margin-bottom: 42px;
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: center;
+    gap: 93px;
+}
+
+.reviews-item {
+    width: 255px;
+    padding: 49px 14px 29px;
 }
 
 .reviews-item:nth-child(1) {
@@ -244,17 +286,12 @@ footer {
     border-radius: 15px;
 }
 
-.reviews-title {
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
 .reviews-description {
     font-size: 24px;
     line-height: 1.17;
     color: #FFFFFF;
+    max-width: 228px;
+    margin-bottom: 8px;
 }
 
 .reviews-time {
@@ -263,15 +300,27 @@ footer {
     color: #D8D8D8;
 }
 
+.reviews-flex {
+    display: flex;
+    padding-top: 47px;
+}
+
 .reviews-img {
     width: 31px;
     height: 31px;
+    margin-right: 5px;
+}
+
+.reviews-flex1 {
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews-name {
     font-size: 14px;
     line-height: 1.14;
     color: #FFFFFF;
+    margin-bottom: 1px;
 }
 
 .reviews-text {
@@ -281,7 +330,12 @@ footer {
 }
 
 .order {
-    background-image: url(../images/order-background.jpg);
+    background-image: url(../images/order-bg.jpg);
+    padding-top: 21px;
+    padding-bottom: 39px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .order-title {
@@ -289,6 +343,33 @@ footer {
     line-height: 1.33;
     color: #FFFFFF;
     font-family: 'Playfair Display';
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+
+.order-item:first-child .order-input {
+    width: 690px;
+    height: 60px;
+    padding: 11px 24px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+
+.order-item:not(:first-child) .order-input {
+    width: 580px;
+    height: 50px;
+    padding: 11px 24px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50px;
 }
 
 .order-input:nth-child(1)::placeholder {
@@ -303,20 +384,38 @@ footer {
     color: #959595;
 }
 
-.order-btn {
+/* .order-btn {
     font-size: 28px;
     line-height: 1.18;
     color: #8D8D8D;
-}
+} */
 
 .order-btn2 {
     font-size: 24px;
     line-height: 1.17;
     color: #FFFFFF;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #8E32C6;
+    border-radius: 16px;
+    padding: 20px 49px;
 }
 
 .footer {
     background-color: #021635;
+    padding-top: 45px;
+    padding-bottom: 37px;
+}
+
+.footer-list {
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-quation {
@@ -332,10 +431,28 @@ footer {
     color: #FFFFFF;
 }
 
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #5E5E5E;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-box1 {
+    padding-right: 17px;
+}
+
 .footer-text {
     font-size: 18px;
     line-height: 1.17;
     color: #FFFFFF;
+    max-width: 291px;
 }
 
 .footer-logo {

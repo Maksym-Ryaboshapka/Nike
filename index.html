@@ -11,8 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&family=Salsa&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -102,19 +102,23 @@
         </section>
         <section class="characteristics">
             <div class="container">
-                <img src="./images/boot.png" alt="boot" class="characteristics-img">
-                <p class="characteristics-text">Comfortable sole</p>
-                <ul class="characteristics-list">
-                    <li class="characteristics-item">
-                        <p class="characteristics-description">10% fabric</p>
-                    </li>
-                    <li class="characteristics-item">
-                        <p class="characteristics-description">40% natural fabric</p>
-                    </li>
-                    <li class="characteristics-item">
-                        <p class="characteristics-description">50% polyester</p>
-                    </li>
-                </ul>
+                <div class="characteristics-flex">
+                    <img src="./images/boot.png" alt="boot" class="characteristics-img">
+                    <p class="characteristics-text">Comfortable sole</p>
+                </div>
+                <div class="characteristics-content">
+                    <ul class="characteristics-list">
+                        <li class="characteristics-item">
+                            <p class="characteristics-description">10% fabric</p>
+                        </li>
+                        <li class="characteristics-item">
+                            <p class="characteristics-description">40% natural fabric</p>
+                        </li>
+                        <li class="characteristics-item">
+                            <p class="characteristics-description">50% polyester</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="reviews">
@@ -127,25 +131,37 @@
                             painted, nothing has
                             worn off in a year.</p>
                         <time class="reviews-time" datetime="2023-11-25">25.11</time>
-                        <img src="./images/reviews-1.png" alt="photo of a person" class="reviews-img">
-                        <p class="reviews-name">John Teylor</p>
-                        <p class="reviews-text">With us from 2018</p>
+                        <div class="reviews-flex">
+                            <img src="./images/reviews-1.png" alt="photo of a person" class="reviews-img">
+                            <div class="reviews-flex1">
+                                <p class="reviews-name">John Teylor</p>
+                                <p class="reviews-text">With us from 2018</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="reviews-item">
                         <p class="reviews-description">I'm very happy with this color scheme.
                             They match all my clothes.</p>
                         <time class="reviews-time" datetime="2023-01-05">05.01</time>
-                        <img src="./images/reviews-2.png" alt="photo of a person" class="reviews-img">
-                        <p class="reviews-name">Elizabeth Garsia</p>
-                        <p class="reviews-text">With us from 2020</p>
+                        <div class="reviews-flex">
+                            <img src="./images/reviews-2.png" alt="photo of a person" class="reviews-img">
+                            <div class="reviews-flex1">
+                                <p class="reviews-name">Elizabeth Garsia</p>
+                                <p class="reviews-text">With us from 2020</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="reviews-item">
                         <p class="reviews-description">Just right if you need to go to a party.
                             I use them actively, the paint is super.</p>
                         <time class="reviews-time" datetime="2023-06-18">18.06</time>
-                        <img src="./images/reviews-3.png" alt="photo of a person" class="reviews-img">
-                        <p class="reviews-name">Tom Maquare</p>
-                        <p class="reviews-text">With us from 2019</p>
+                        <div class="reviews-flex">
+                            <img src="./images/reviews-3.png" alt="photo of a person" class="reviews-img">
+                            <div class="reviews-flex1">
+                                <p class="reviews-name">Tom Maquare</p>
+                                <p class="reviews-text">With us from 2019</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -154,45 +170,52 @@
             <div class="container">
                 <h2 class="order-title">Order</h2>
                 <form class="order-form">
-                    <input type="text" class="order-input" placeholder="Write your email">
-                    <button class="order-btn">Confirm</button>
-                    <input type="text" class="order-input" placeholder="Your Country">
-                    <input type="text" class="order-input" placeholder="Your City">
-                    <input type="text" class="order-input" placeholder="Your Adress">
-                    <button class="order-btn2">Order my Nike</button>
+                    <!-- <button class="order-btn" type="button">Confirm</button> -->
+                    <ul class="order-list">
+                        <li class="order-item">
+                            <input type="text" class="order-input" placeholder="Write your email">
+                        </li>
+                        <li class="order-item">
+                            <input type="text" class="order-input" placeholder="Your Country">
+                        </li>
+                        <li class="order-item">
+                            <input type="text" class="order-input" placeholder="Your City">
+                        </li>
+                        <li class="order-item">
+                            <input type="text" class="order-input" placeholder="Your Adress">
+                        </li>
+                    </ul>
+                    <button class="order-btn2" type="button">Order my Nike</button>
                 </form>
             </div>
         </section>
         <footer class="footer">
             <div class="container">
-                <ul class="footer-quationes">
+                <ul class="footer-list">
                     <li class="footer-item">
                         <p class="footer-quation">Have a question?</p>
+                        <a href="mailto:ColoRawe_support@gmail.com" class="footer-mail">ColoRawe_support@gmail.com</a>
                     </li>
                     <li class="footer-item">
                         <p class="footer-quation">Have a proposal for cooperation?</p>
-                    </li>
-                    <li class="footer-item">
-                        <p class="footer-quation">Advertising questions?</p>
-                    </li>
-                </ul>
-                <ul class="footer-mails">
-                    <li class="footer-item2">
-                        <a href="mailto:ColoRawe_support@gmail.com" class="footer-mail">ColoRawe_support@gmail.com</a>
-                    </li>
-                    <li class="footer-item2">
                         <a href="mailto:ColoRawe_Cooperation@gmail.com"
                             class="footer-mail">ColoRawe_Cooperation@gmail.com</a>
                     </li>
-                    <li class="footer-item2">
+                    <li class="footer-item">
+                        <p class="footer-quation">Advertising questions?</p>
                         <a href="mailto:ColoRawe_Advertising@gmail.com"
                             class="footer-mail">ColoRawe_Advertising@gmail.com</a>
                     </li>
                 </ul>
-                <p class="footer-text">2022 ColoRawe @All rights reserved</p>
-                <p class="footer-text">United States</p>
-                <img src="./images/logo.png" alt="logo" class="footer-logo">
-                <p class="footer-abr">С&R</p>
+                <div class="footer-flex">
+                    <p class="footer-text">2022 ColoRawe @All rights reserved United States</p>
+                    <div class="footer-box">
+                        <img src="./images/logo.png" alt="logo" class="footer-logo">
+                        <div class="footer-box1">
+                            <p class="footer-abr">С&R</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </main>
